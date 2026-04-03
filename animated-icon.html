@@ -3,64 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animated Hamburger Menu</title>
+  <title>Animated Hamburger Icon</title>
+
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="shared.css">
-  <!-- ⬇︎ This is the stylesheet for this hamburger menu ⬇︎ -->
   <link rel="stylesheet" href="animated-icon.css">
 </head>
-
 <body>
 
-  <!-- Notes: 
-    • This page layout example doesn't use a wrapper div. Instead, the header goes the entire width and the <main> is limited with a max-width. 
-    • The HTML of the menu on this page is different than the other two examples. -->
-
   <header>
-    <h1>Fancy Animated Icon</h1>
+    <h1>Animated Hamburger Icon</h1>
+
     <nav>
-      <!-- The hamburger icon (☰) acts as a label for the hidden menu checkbox -->
-      <!-- This checkbox is hidden and acts as the toggle switch for the menu -->
-      <input id="menu" type="checkbox" class="menu-btn" />
+      <!-- Hidden checkbox controls the menu state -->
+      <input id="menu-toggle" type="checkbox">
 
-      <!-- This label, when clicked, triggers the checkbox and contains the hamburger icon -->
-      <label for="menu" class="menu-icon"> <span class="navicon"></span> </label>
+      <!-- Label displays the animated hamburger icon -->
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-      <!-- The collapsible menu -->
-      <ul class="menu">
+      <!-- Navigation links -->
+      <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="basic-menu.html">Basic</a></li>
-        <li><a href="animated-menu.html">Animated</a></li>
-        <li><a href="animated-icon.html">Fancy</a></li>
+        <li><a href="hamburger-menu.html">Hamburger Menu</a></li>
+        <li><a href="animated-icon.html">Animated Icon</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <h2>What’s Different in This Version?</h2>
-    <p>This version of the hamburger menu <strong>animates the icon itself</strong>. Instead of staying the same, the three lines of the hamburger icon <strong>transform into an "X"</strong> when clicked.</p>
+    <p>
+      This version uses the same basic hamburger menu idea, but the icon itself also animates.
+      When the menu opens, the three lines transform into an “X” shape.
+    </p>
 
     <h2>How It Works</h2>
     <ul>
-      <li>The checkbox input is still used to toggle visibility.</li>
-      <li>The <strong>hamburger icon is made using CSS</strong> with <code>span.navicon</code> and pseudo-elements <code>::before</code> and <code>::after</code>.</li>
-      <li>When checked, the <strong>middle line disappears</strong> while the <strong>top and bottom lines rotate</strong> into an "X".</li>
-      <li>The <strong>menu still slides open smoothly</strong>, like in the animated menu example.</li>
+      <li>A hidden <strong>checkbox</strong> controls the open and closed state.</li>
+      <li>A <strong>label</strong> acts as the clickable hamburger button.</li>
+      <li>Each line of the icon is built with a <code>span</code>.</li>
+      <li>CSS <strong>transforms</strong> and <strong>transitions</strong> animate the icon when the menu is opened.</li>
     </ul>
 
-    <h2>Try It!</h2>
-    <p>Resize the browser or view on a mobile device then click the ☰ icon to see it in action!</p>
-
-    <h2>Examples</h2>
-    <p>I've included several hamburger menu examples. They range from a simple click-to-appear menu, to animating the menu opening, to a fancy version where the icon itsef also animates.</p>
+    <h2>What to Notice</h2>
     <ul>
-      <li><a href="index.html">Basic Hamburger Menu</a></li>
-      <li><a href="animated-menu.html">Simple Animated Menu</a></li>
-      <li><a href="animated-icon.html">Fancy Animated Icon</a></li>
+      <li>The menu behavior is similar to the main hamburger menu example.</li>
+      <li>The biggest difference is the icon animation.</li>
+      <li>This version adds more visual polish, but it also requires more CSS.</li>
     </ul>
+
+    <h2>Try It</h2>
+    <p>
+      Make your browser window smaller, then click the animated icon to open and close the menu.
+    </p>
+
+    <h2>Compare the Two Versions</h2>
+    <p>
+      After exploring this example, go back and compare it to the main hamburger menu version.
+      Notice how both menus use the same basic idea, but this one adds more animation and styling.
+    </p>
   </main>
+
   <footer>
-    <small>You're free to use this code in any of your projects.</small>
+    <small>You are welcome to use and adapt this code in your own projects.</small>
   </footer>
 
 </body>

@@ -11,25 +11,40 @@
 
   <div class="wrapper">
 
-    <header>
+    <header class="page-header">
       <h1>Hamburger Menu Examples</h1>
-      <p>Coding exercise exploring ways to build a hamburger menu</p>
+      <p class="tagline">
+        A small teaching project that explores how hamburger menus work and how they can be styled for real websites.
+      </p>
     </header>
 
     <main>
 
       <section class="content-section">
         <h2>What is a hamburger menu?</h2>
-        <p>A <strong>hamburger menu</strong> is a navigation pattern that hides a website’s menu links behind a <span class="icon">☰</span> icon. The icon usually looks like three horizontal lines, which is why it is called a hamburger menu.</p>
-        
-        <p>When the user clicks or taps the icon, the hidden navigation menu appears. This pattern is very common on phones and tablets because smaller screens do not have as much room for a full horizontal navigation bar.</p>
+        <p>
+          A hamburger menu is a navigation pattern that hides links behind a small icon.
+          That icon usually looks like three horizontal lines, which is why it is often
+          called a <strong>hamburger menu</strong>.
+        </p>
+        <p>
+          When the user clicks or taps the icon, the hidden menu appears. This pattern is
+          common on phones and tablets because smaller screens do not leave much room for
+          a full horizontal navigation bar.
+        </p>
       </section>
 
       <section class="content-section">
         <h2>Why do websites use hamburger menus?</h2>
-        <p>Hamburger menus help save space and keep layouts cleaner, especially on mobile devices. Instead of showing every navigation link all the time, the menu can stay hidden until the user needs it.</p>
-        
-        <p>This can be helpful, but it also creates a tradeoff. If navigation is hidden, users have to notice the icon and interact with it before they can see where to go next.</p>
+        <p>
+          Hamburger menus help save space and can make a layout feel cleaner, especially on
+          smaller screens. Instead of displaying every navigation link all the time, the menu
+          stays hidden until the user needs it.
+        </p>
+        <p>
+          This can be helpful, but it also creates a tradeoff. If navigation is hidden, users
+          must notice the icon and click it before they can see where to go next.
+        </p>
       </section>
 
       <section class="content-section two-column">
@@ -38,8 +53,8 @@
           <ul>
             <li>Saves space on small screens</li>
             <li>Can make a layout feel cleaner</li>
-            <li>Works well for mobile-first navigation</li>
-            <li>Helps organize navigation in a compact way</li>
+            <li>Works well for mobile navigation</li>
+            <li>Keeps links organized in a compact area</li>
           </ul>
         </div>
 
@@ -48,46 +63,38 @@
           <ul>
             <li>Navigation is hidden until clicked</li>
             <li>Some users may not notice the icon right away</li>
-            <li>Important links can become less visible</li>
-            <li>It can hurt usability if overused or poorly designed</li>
+            <li>Important links become less visible</li>
+            <li>It can hurt usability if used poorly</li>
           </ul>
         </div>
       </section>
 
       <section class="content-section">
-        <h2>What this project demonstrates</h2>
+        <h2>What this project includes</h2>
         <p>
-          This repo includes three examples of hamburger menus. Each one builds on the same general idea,
-          but adds a little more visual style or animation.
+          This project includes one main hamburger menu example and one more advanced example.
+          The main example demonstrates the core idea using a hidden checkbox, a label, and CSS
+          to reveal the menu on smaller screens.
         </p>
 
         <div class="menu-grid">
 
           <article class="menu-card">
-            <h3>1. Basic Hamburger Menu</h3>
+            <h3>Main Hamburger Menu Example</h3>
             <p>
-              This version focuses on the core structure and behavior. It is the simplest example and is
-              useful for understanding how the menu itself works.
+              This is the main lesson example. It uses a hidden checkbox and a label to open
+              and close a mobile navigation menu, and it includes a smooth animation.
             </p>
-            <a href="basic-menu.html" class="button">View Basic Menu</a>
+            <a href="hamburger-menu.html" class="button">View Main Example</a>
           </article>
 
           <article class="menu-card">
-            <h3>2. Animated Hamburger Menu</h3>
+            <h3>Animated Icon Example</h3>
             <p>
-              This version adds a smoother opening and closing effect. It feels more polished and closer to
-              what you might use on a real website.
+              This is a more advanced version where the hamburger icon itself animates.
+              It is a good example of how the same basic idea can be expanded with extra polish.
             </p>
-            <a href="animated-menu.html" class="button">View Animated Menu</a>
-          </article>
-
-          <article class="menu-card">
-            <h3>3. Animated Hamburger Icon</h3>
-            <p>
-              This version adds a more advanced animated icon. It has the most visual polish, but it is also
-              the most complex of the three examples.
-            </p>
-            <a href="animated-icon.html" class="button">View Animated Icon</a>
+            <a href="animated-icon.html" class="button">View Advanced Example</a>
           </article>
 
         </div>
@@ -96,24 +103,29 @@
       <section class="content-section">
         <h2>Tips for this learning exercise</h2>
         <ul class="tips-list">
-          <li>Pay attention to how the HTML is structured.</li>
-          <li>Notice how CSS is used to hide and reveal the menu.</li>
-          <li>Compare the basic version to the animated versions.</li>
-          <li>Think about how the menu would behave on a phone versus a desktop computer.</li>
-          <li>Remember that a feature is only useful if it helps the visitor navigate the site more easily.</li>
+          <li>Pay close attention to the HTML structure of the menu.</li>
+          <li>Notice how the <code>label</code> and <code>input</code> work together.</li>
+          <li>Compare the simple menu behavior to the more advanced animated icon version.</li>
+          <li>Think about how the menu behaves on a phone versus a desktop screen.</li>
+          <li>Remember that a feature is only successful if it helps the visitor use the site more easily.</li>
         </ul>
       </section>
 
       <section class="content-section">
         <h2>Keep in mind</h2>
         <p>
-          A hamburger menu is not always the best choice. Designers use them when space is limited, but
-          hiding navigation can sometimes make a site less clear. As you explore these examples, think not
-          just about how the code works, but also about when this kind of navigation is a good idea.
+          A hamburger menu is not always the best choice. Designers often use them when screen
+          space is limited, but hidden navigation can sometimes make a site feel less clear.
+          As you explore these examples, think not only about how the code works, but also about
+          when this kind of navigation is a good design choice.
         </p>
       </section>
 
     </main>
+
+    <footer class="page-footer">
+      <p>This project was created for learning, experimentation, and discussion.</p>
+    </footer>
 
   </div>
 

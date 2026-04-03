@@ -1,65 +1,98 @@
-/* These are general styles shared by all of the example pages. They're not part of the hamburger menu so you don't need to copy them to your site. */
+/* ------------------------------
+   SHARED PAGE STYLES
+---------------------------------
+
+These styles are shared by multiple pages
+in this project so the individual page CSS
+files can focus on the menu behavior.
+*/
+
+/* ------------------------------
+   BASE PAGE STYLES
+--------------------------------- */
 
 body {
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #eef2f6;
+  color: #1f2933;
 }
 
-main {
-   max-width: 64rem;
-   margin: 0 auto;
-   padding: 1rem 2rem;
-   font-size: 130%;
-   line-height: 1.3;
-   background-color: snow;
+/* ------------------------------
+   COLOR THEMES
+---------------------------------
+
+Each example page gets its own color theme
+so students can easily tell which page
+they are currently viewing.
+*/
+
+/* Main hamburger menu example: blue/teal theme */
+.hamburger-menu header,
+.hamburger-menu footer {
+  background-color: #0f4c5c;
 }
 
-h2 {
-   font-size: 125%;
-   border-bottom: 1px solid silver;
-}
-
-main li {
-   margin: 0 0 .5rem 2rem;
-}
-
-code {
-   font-weight: bold;
-   background-color: #e3e3e3;
-   padding: 2px 5px;
-   border-radius: 0.5rem;
-}
-
-footer {
-   color: white;
-   padding: 0.5rem;
-   text-align: center;
-}
-
-.basic header,
-.basic footer {
-   background-color: seagreen;
-}
-
-.basic body {
-   background-color: #cacbca;
-}
-
-.animated-menu header,
-.animated-menu footer {
-   background-color: #546880;
-}
-
-.animated-menu body {
-   background-color: #c0cac9;
-}
-
+/* Animated icon example: plum/purple theme */
 .animated-icon header,
 .animated-icon footer {
-   background-color: thistle;
+  background-color: #7a5c8e;
 }
 
-.animated-icon body {
-   background-color: #f4e1e9;
+/* ------------------------------
+   MAIN CONTENT AREA
+--------------------------------- */
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(16, 42, 67, 0.08);
 }
 
+/* Section headings inside main */
+main h2 {
+  color: #102a43;
+  margin-top: 0;
+}
 
+/* Paragraph and list text inside main */
+main p,
+main li {
+  color: #334e68;
+}
+
+/* Lists inside the main content */
+main ul {
+  padding-left: 20px;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------- */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #d9e2ec;
+}
+
+footer small {
+  font-size: 0.95rem;
+}
+
+/* ------------------------------
+   MAIN CONTENT LINKS
+--------------------------------- */
+
+main a {
+  color: #2f6f91;
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
