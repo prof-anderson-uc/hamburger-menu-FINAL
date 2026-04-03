@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="animated-icon">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Hamburger Menu</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="shared.css">
+  <!-- ⬇︎ This is the stylesheet for this hamburger menu ⬇︎ -->
+  <link rel="stylesheet" href="animated-icon.css">
+</head>
+
+<body>
+
+  <!-- Notes: 
+    • This page layout example doesn't use a wrapper div. Instead, the header goes the entire width and the <main> is limited with a max-width. 
+    • The HTML of the menu on this page is different than the other two examples. -->
+
+  <header>
+    <h1>Fancy Animated Icon</h1>
+    <nav>
+      <!-- The hamburger icon (☰) acts as a label for the hidden menu checkbox -->
+      <!-- This checkbox is hidden and acts as the toggle switch for the menu -->
+      <input id="menu" type="checkbox" class="menu-btn" />
+
+      <!-- This label, when clicked, triggers the checkbox and contains the hamburger icon -->
+      <label for="menu" class="menu-icon"> <span class="navicon"></span> </label>
+
+      <!-- The collapsible menu -->
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="basic-menu.html">Basic</a></li>
+        <li><a href="animated-menu.html">Animated</a></li>
+        <li><a href="animated-icon.html">Fancy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>What’s Different in This Version?</h2>
+    <p>This version of the hamburger menu <strong>animates the icon itself</strong>. Instead of staying the same, the three lines of the hamburger icon <strong>transform into an "X"</strong> when clicked.</p>
+
+    <h2>How It Works</h2>
+    <ul>
+      <li>The checkbox input is still used to toggle visibility.</li>
+      <li>The <strong>hamburger icon is made using CSS</strong> with <code>span.navicon</code> and pseudo-elements <code>::before</code> and <code>::after</code>.</li>
+      <li>When checked, the <strong>middle line disappears</strong> while the <strong>top and bottom lines rotate</strong> into an "X".</li>
+      <li>The <strong>menu still slides open smoothly</strong>, like in the animated menu example.</li>
+    </ul>
+
+    <h2>Try It!</h2>
+    <p>Resize the browser or view on a mobile device then click the ☰ icon to see it in action!</p>
+
+    <h2>Examples</h2>
+    <p>I've included several hamburger menu examples. They range from a simple click-to-appear menu, to animating the menu opening, to a fancy version where the icon itsef also animates.</p>
+    <ul>
+      <li><a href="index.html">Basic Hamburger Menu</a></li>
+      <li><a href="animated-menu.html">Simple Animated Menu</a></li>
+      <li><a href="animated-icon.html">Fancy Animated Icon</a></li>
+    </ul>
+  </main>
+  <footer>
+    <small>You're free to use this code in any of your projects.</small>
+  </footer>
+
+</body>
+</html>

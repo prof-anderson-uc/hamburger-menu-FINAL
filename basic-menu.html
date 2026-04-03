@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="basic">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Hamburger Menu</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="shared.css">
+  <!-- ⬇︎ This is the stylesheet for this hamburger menu ⬇︎ -->
+  <link rel="stylesheet" href="basic-menu.css">
+</head>
+
+<body>
+
+  <!-- Note: This page layout example doesn't use a wrapper div. Instead, the header goes the entire width and the <main> is limited with a max-width. -->
+
+  <header>
+    <h1>Basic Hamburger Menu</h1>
+    <nav>
+      <!-- The hamburger icon (☰) acts as a label for the hidden menu checkbox -->
+      <!-- This checkbox is hidden and acts as the toggle switch for the menu -->
+      <label for="menu" tabindex="0"> ☰ </label>
+
+      <!-- Hidden checkbox controls the menu visibility -->
+      <input id="menu" type="checkbox" />
+
+      <!-- The collapsible menu -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="basic-menu.html">Basic</a></li>
+        <li><a href="animated-menu.html">Animated</a></li>
+        <li><a href="animated-icon.html">Fancy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>What is a Hamburger Menu?</h2>
+    <p>A "hamburger menu" is a type of navigation that hides links behind a <strong>☰</strong> icon to save space.</p>
+
+    <h2>How This Example Works</h2>
+    <p>
+      This example uses a <strong>hidden checkbox</strong> and a <strong>label</strong> (☰) to toggle the menu. When the checkbox is checked,
+      the menu appears. This technique allows us to create a simple dropdown menu <strong>without JavaScript</strong>.
+    </p>
+
+    <h2>Try It!</h2>
+    <p>Resize the browser or view on a mobile device then click the ☰ icon to see it in action!</p>
+
+    <h2>Examples</h2>
+    <p>I've included several hamburger menu examples. They range from a simple click-to-appear menu, to animating the menu opening, to a fancy version where the icon itself also animates.</p>
+    <ul>
+      <li><a href="index.html">Basic Hamburger Menu</a></li>
+      <li><a href="animated-menu.html">Simple Animated Menu</a></li>
+      <li><a href="animated-icon.html">Fancy Animated Icon</a></li>
+    </ul>
+  </main>
+  <footer>
+    <small>You're free to use this code in any of your projects.</small>
+  </footer>
+
+</body>
+</html>
