@@ -99,22 +99,6 @@ This creates a more polished effect, but it also requires more code.
 
 ---
 
-## File structure
-
-    hamburger-menu-final/
-    ├── images/
-    ├── animated-icon.css
-    ├── animated-icon.html
-    ├── hamburger-menu.css
-    ├── hamburger-menu.html
-    ├── index.html
-    ├── overview.css
-    ├── README.md
-    ├── reset.css
-    └── shared.css
-
----
-
 ## Why the CSS is split across multiple files
 
 This project separates the CSS by purpose:
