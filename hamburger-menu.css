@@ -41,6 +41,7 @@ nav {
 nav ul {
   display: flex;
   text-align: center;
+  list-style: none;
 }
 
 nav a {
@@ -70,6 +71,11 @@ nav label {
 
 @media (max-width: 48rem) {
 
+  /* The dropdown menu is positioned against the header */
+  header {
+    position: relative;
+  }
+
   header nav {
     margin-left: auto;
     text-align: right;
@@ -97,6 +103,12 @@ nav label {
     flex-direction: column;
     margin-top: 0.75rem;
     min-width: 220px;
+
+    /* Drop the menu below the header so the closed menu
+       doesn't take up room and push the page sideways */
+    position: absolute;
+    top: 100%;
+    right: 2rem;
   }
 
   /* Open menu when checkbox is checked */

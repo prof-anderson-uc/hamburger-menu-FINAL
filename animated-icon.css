@@ -45,6 +45,7 @@ is visible in a horizontal row.
 nav ul {
   display: flex; /* Places the list items side-by-side */
   text-align: center; /* Centers the text inside the navigation area */
+  list-style: none; /* Removes the bullet points from the menu list */
 }
 
 nav a {
@@ -80,6 +81,11 @@ the menu is opened.
 */
 
 @media (max-width: 48rem) {
+
+  /* The dropdown menu is positioned against the header */
+  header {
+    position: relative; /* Lets the dropdown line up with the bottom of the header */
+  }
 
   /* Keep the nav aligned to the right side of the header */
   header nav {
@@ -135,6 +141,12 @@ the menu is opened.
     flex-direction: column; /* Stacks the menu items vertically instead of in a row */
     margin-top: 0.75rem; /* Adds space between the icon and the dropdown menu */
     min-width: 220px; /* Prevents the dropdown from becoming too narrow */
+
+    /* Drop the menu below the header so the closed menu
+       doesn't take up room and push the page sideways */
+    position: absolute; /* Takes the menu out of the header's row */
+    top: 100%; /* Places the menu just below the header */
+    right: 2rem; /* Lines the menu up with the header's right padding */
   }
 
   /* Show the menu when the checkbox is checked.
